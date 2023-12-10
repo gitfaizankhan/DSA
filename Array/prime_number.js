@@ -5,7 +5,7 @@ function prime_number(n) {
 
     while(count < n) {
         let flag = true;
-        for(let i = 2; i < number; i++) {
+        for(let i = 2; i < Math.floor(number/2); i++) {
             if(number % i == 0) {
                 flag = false;
                 break;
@@ -15,7 +15,7 @@ function prime_number(n) {
         if(flag == true) {
             arr[count] = number;
             count = count+1;
-        }
+        } 
         number = number+1;
     }
     return arr;
