@@ -7,5 +7,5 @@ function runningSum(arr) {
     return arr;
 }
 
-let result = runningSum([3, 1, 2, 10, 1]);
+let result = runningSum([1,2,3,4]);
 console.log(result);
