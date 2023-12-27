@@ -1,14 +1,13 @@
 function nextGreatest(arr, n) {
-    let max = arr[n-1];
+    let greater = arr[n-1];
     arr[n-1] = -1;
-    for(let i = n-1; i >= 0; i--){
-        let temp = arr[i];
-        arr[i] = max;
-        if(temp > max) {
-            max = temp;
+    for(let i = n-2; i >= 0; i--) {
+        let num = arr[i];
+        arr[i] = greater;
+        if(num > greater) {
+            greater = num;
         }
     }
-    arr[n-1] = -1;
     return arr;
 }
 
